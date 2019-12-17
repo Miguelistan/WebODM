@@ -10,6 +10,17 @@ algos = {
         'expr': '(N - R) / (N + R)',
         'help': 'Normalized Difference Vegetation Index shows the amount of green vegetation.'
     },
+    
+     'NDVI': {
+        'expr': '(N - B) / (N + B)',
+        'help': 'Normalized Difference Vegetation Index with NIR and Blue channels shows the amount of green vegetation.'
+    },
+    
+    'ENDVI': {
+        'expr': '(N + G) - (2*B) / (N + G) + (2*B)',
+        'help': 'Enhanced Normalized Difference Vegetation Index with NIR and Blue channels shows the amount of green vegetation.'
+    },
+       
     'VARI': {
         'expr': '(G - R) / (G + R - B)',
         'help': 'Visual Atmospheric Resistance Index shows the areas of vegetation.',
